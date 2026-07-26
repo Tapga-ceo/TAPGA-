@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAPGA Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>👤 My Profile</h1>
+
+<h2 id="username">Guest User</h2>
+
+<p>Level: <strong>1</strong></p>
+
+<p>Total TAP Coins:</p>
+
+<h1 id="profileCoins">0</h1>
+
+<button onclick="location.href='index.html'">
+🏠 Back Home
+</button>
+
+</div>
+
+<script>
+
+let coins = localStorage.getItem("coins") || 0;
+
+document.getElementById("profileCoins").innerText = coins;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAPGA Tasks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🎯 Daily Tasks</h1>
+
+<button onclick="completeTask(50)">
+Watch One Video (+50)
+</button>
+
+<button onclick="completeTask(100)">
+Visit a Partner (+100)
+</button>
+
+<button onclick="completeTask(200)">
+Invite a Friend (+200)
+</button>
+
+</div>
+
+<script>
+function completeTask(reward){
+
+let coins = Number(localStorage.getItem("coins")) || 0;
+
+coins += reward;
+
+localStorage.setItem("coins", coins);
+
+alert("You earned " + reward + " TAP Coins!");
+
+}
+</script>
+
+</body>
+</html>

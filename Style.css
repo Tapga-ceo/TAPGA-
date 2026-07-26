@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111827;
+    color:white;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:25px;
+}
+
+header h1{
+    color:#00ff99;
+    font-size:45px;
+}
+
+header p{
+    color:#cccccc;
+    margin-top:8px;
+    font-size:18px;
+}
+
+.card{
+    max-width:360px;
+    margin:auto;
+    background:#1f2937;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,255,153,.2);
+}
+
+.energy{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+.energyBar{
+    width:100%;
+    height:12px;
+    background:#444;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+
+#energyFill{
+    width:100%;
+    height:100%;
+    background:#00ff99;
+}
+
+h2{
+    text-align:center;
+}
+
+#coins{
+    text-align:center;
+    font-size:60px;
+    color:#00ff99;
+    margin:20px 0;
+}
+
+#tapButton{
+    width:200px;
+    height:200px;
+    display:block;
+    margin:auto;
+    border:none;
+    border-radius:50%;
+    background:#00ff99;
+    color:#111827;
+    font-size:40px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#tapButton:active{
+    transform:scale(.95);
+}
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#1f2937;
+    display:flex;
+    justify-content:space-around;
+    padding:12px 0;
+    border-top:1px solid #333;
+}
+
+.bottom-nav button{
+    background:none;
+    border:none;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+}
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#1f2937;
+    display:flex;
+    justify-content:space-around;
+    padding:12px 0;
+    border-top:1px solid #333;
+}
+
+.bottom-nav button{
+    background:none;
+    border:none;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.bottom-nav button:hover{
+    color:#00ff99;
+}
+input{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:10px;
+background:#00ff99;
+color:#111827;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+.reward{
+margin-bottom:20px;
+}
+
+.reward button{
+background:#ffcc00;
+color:#111827;
+}
